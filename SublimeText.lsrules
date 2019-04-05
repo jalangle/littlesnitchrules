@@ -1,0 +1,22 @@
+{
+  "description" : "",
+  "name" : "Sublime Text",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1554423697.2370501,
+      "modificationDate" : 1554423697.2370501,
+      "owner" : "me",
+      "process" : "\/Applications\/Sublime Text.app\/Contents\/MacOS\/Sublime Text",
+      "remote-domains" : "sublimehq.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1554423677.4422841,
+      "modificationDate" : 1554423677.4422841,
+      "owner" : "me",
+      "process" : "\/Applications\/Sublime Text.app\/Contents\/MacOS\/Sublime Text",
+      "remote-domains" : "sublimetext.com"
+    }
+  ]
+}
