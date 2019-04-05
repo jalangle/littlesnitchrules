@@ -17,6 +17,14 @@
       "owner" : "me",
       "process" : "\/Applications\/Sublime Text.app\/Contents\/MacOS\/Sublime Text",
       "remote-domains" : "sublimetext.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1554423684.319664,
+      "modificationDate" : 1554423684.319664,
+      "owner" : "me",
+      "process" : "\/Applications\/Sublime Text.app\/Contents\/MacOS\/plugin_host",
+      "remote-domains" : "packagecontrol.io"
     }
   ]
 }
