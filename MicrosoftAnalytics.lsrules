@@ -1,0 +1,14 @@
+{
+  "description" : "Microsoft-related analytics domains",
+  "name" : "Microsoft Analytics",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1554492730.425422,
+      "modificationDate" : 1554492730.425422,
+      "owner" : "me",
+      "process" : "any",
+      "remote-domains" : "pipe.aria.microsoft.com"
+    }
+  ]
+}
