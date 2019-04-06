@@ -1,0 +1,14 @@
+{
+  "description" : "",
+  "name" : "Drafts",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1553568991.385185,
+      "modificationDate" : 1553568991.385185,
+      "owner" : "me",
+      "process" : "\/Applications\/Drafts.app\/Contents\/MacOS\/Drafts",
+      "remote-domains" : "getdrafts.com"
+    }
+  ]
+}
