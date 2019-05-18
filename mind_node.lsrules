@@ -1,0 +1,14 @@
+{
+  "description" : "",
+  "name" : "mind_node",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1558141938.5007381,
+      "modificationDate" : 1558141938.5007381,
+      "owner" : "me",
+      "process" : "\/Applications\/MindNode.app\/Contents\/MacOS\/MindNode",
+      "remote-domains" : "mindnode.com"
+    }
+  ]
+}
