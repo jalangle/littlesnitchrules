@@ -1,0 +1,54 @@
+{
+  "description" : "",
+  "name" : "Proton",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1554854484.389802,
+      "modificationDate" : 1554854484.389802,
+      "owner" : "me",
+      "process" : "\/Applications\/ProtonVPN.app\/Contents\/MacOS\/ProtonVPN",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1554854491.983408,
+      "modificationDate" : 1554854491.983408,
+      "owner" : "me",
+      "process" : "\/Applications\/ProtonVPN.app\/Contents\/MacOS\/ProtonVPN",
+      "remote-domains" : "protonmail.ch"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1554854586.4054379,
+      "modificationDate" : 1554854586.4054379,
+      "owner" : "me",
+      "process" : "\/Applications\/ProtonVPN.app\/Contents\/MacOS\/ProtonVPN",
+      "remote-domains" : "protonstatus.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1554854550.7617669,
+      "modificationDate" : 1554854550.7617669,
+      "owner" : "me",
+      "process" : "\/Applications\/ProtonVPN.app\/Contents\/MacOS\/ProtonVPN",
+      "remote-domains" : "protonvpn.ch"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1554854522.723686,
+      "modificationDate" : 1554854522.723686,
+      "owner" : "me",
+      "process" : "\/Applications\/ProtonVPN.app\/Contents\/MacOS\/ProtonVPN",
+      "remote-domains" : "protonvpn.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1554854530.3670149,
+      "modificationDate" : 1554854530.3670149,
+      "owner" : "me",
+      "process" : "\/Applications\/ProtonVPN.app\/Contents\/MacOS\/ProtonVPN",
+      "remote-domains" : "protonvpn.net"
+    }
+  ]
+}
