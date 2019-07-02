@@ -217,6 +217,22 @@
       "owner" : "me",
       "process" : "\/Applications\/Utilities\/Adobe Creative Cloud\/ACC\/Creative Cloud.app\/Contents\/MacOS\/Creative Cloud",
       "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1562105848.7726831,
+      "modificationDate" : 1562105848.7726831,
+      "owner" : "me",
+      "process" : "\/Library\/Application Support\/Adobe\/Adobe Desktop Common\/ADS\/Adobe Desktop Service.app\/Contents\/MacOS\/Adobe Desktop Service",
+      "remote-domains" : "adobelogin.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1562105542.7125158,
+      "modificationDate" : 1562105542.7125158,
+      "owner" : "me",
+      "process" : "\/Applications\/Adobe Lightroom CC\/Adobe Lightroom.app\/Contents\/MacOS\/LogTransport2.app\/Contents\/MacOS\/LogTransport2",
+      "remote-domains" : "adobe.com"
     }
   ]
 }
