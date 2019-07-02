@@ -4,17 +4,25 @@
   "rules" : [
     {
       "action" : "allow",
-      "creationDate" : 1551814218.860184,
-      "modificationDate" : 1551814218.860184,
+      "creationDate" : 1554772266.6416578,
+      "modificationDate" : 1555943668.9168029,
       "owner" : "me",
+      "process" : "\/Applications\/1Password 7.app\/Contents\/MacOS\/1Password 7",
+      "remote-domains" : "pwnedpasswords.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1562109564.092464,
+      "modificationDate" : 1562109564.092464,
+      "owner" : "any",
       "process" : "\/Applications\/1Password 7.app\/Contents\/MacOS\/1Password 7",
       "remote-domains" : "1password.com"
     },
     {
       "action" : "allow",
-      "creationDate" : 1551814218.4205952,
-      "modificationDate" : 1551814218.4205952,
-      "owner" : "me",
+      "creationDate" : 1562109564.092464,
+      "modificationDate" : 1562109564.092464,
+      "owner" : "any",
       "process" : "\/Applications\/1Password 7.app\/Contents\/MacOS\/1Password 7",
       "remote-domains" : "agilebits.com"
     }
