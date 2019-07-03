@@ -1,9 +1,9 @@
 #!env python3
 
+import json
+
 # filters explained here:
 # https://adblockplus.org/en/filter-cheatsheet#blocking2
-
-
 
 input_file = open("easylist.txt")
 
@@ -34,4 +34,4 @@ for line in input_file:
 
 input_file.close()
 
-print(output_data)
+print(json.dumps(output_data, indent=4))
