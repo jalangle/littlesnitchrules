@@ -32,4 +32,4 @@ for line in input_file:
 
 input_file.close()
 
-print(json.dumps(output_data, indent=4))
+print(json.dumps(output_data, indent=2))
