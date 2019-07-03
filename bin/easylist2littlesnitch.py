@@ -25,8 +25,6 @@ for line in input_file:
 		if separator != -1:
 			deny_rule = {}
 			deny_rule["action"] = "deny"
-			deny_rule["creationDate"] = 0.0
-			deny_rule["modificationDate"] = 0.0
 			deny_rule["owner"] = "me"
 			deny_rule["process"] = "any"
 			deny_rule["remote-domains"] = line[:separator]
