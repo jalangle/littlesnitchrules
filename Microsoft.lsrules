@@ -1,18 +1,18 @@
 {
-  "description" : "Microsoft-related domains",
-  "name" : "Microsoft",
-  "rules" : [
+  "description": "Microsoft-related domains",
+  "name": "Microsoft",
+  "rules": [
     {
-      "action" : "deny",
-      "owner" : "me",
-      "process" : "any",
-      "remote-domains" : "pipe.aria.microsoft.com"
+      "action": "deny",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": "pipe.aria.microsoft.com"
     },
     {
-      "action" : "allow",
-      "owner" : "me",
-      "process" : "any",
-      "remote-domains" : [
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
         "azurewebsites.net",
         "bing.com",
         "hockeyapp.net",
