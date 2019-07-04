@@ -7,7 +7,7 @@
       "owner": "me",
       "process": "any",
       "remote-domains": [
-        "twiimg.com",
+        "twimg.com",
         "twitter.com"
       ]
     }
