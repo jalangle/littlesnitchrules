@@ -8,6 +8,7 @@
       "process": "any",
       "remote-domains": [
         "google-analytics.com",
+        "googleadservices.com",
         "googletagmanager.com",
         "googletagservices.com"
       ]
