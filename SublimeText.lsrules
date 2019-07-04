@@ -1,30 +1,16 @@
 {
-  "description" : "",
-  "name" : "Sublime Text",
-  "rules" : [
+  "description": "",
+  "name": "Sublime Text",
+  "rules": [
     {
-      "action" : "allow",
-      "creationDate" : 1554423697.2370501,
-      "modificationDate" : 1554423697.2370501,
-      "owner" : "me",
-      "process" : "\/Applications\/Sublime Text.app\/Contents\/MacOS\/Sublime Text",
-      "remote-domains" : "sublimehq.com"
-    },
-    {
-      "action" : "allow",
-      "creationDate" : 1554423677.4422841,
-      "modificationDate" : 1554423677.4422841,
-      "owner" : "me",
-      "process" : "\/Applications\/Sublime Text.app\/Contents\/MacOS\/Sublime Text",
-      "remote-domains" : "sublimetext.com"
-    },
-    {
-      "action" : "allow",
-      "creationDate" : 1554423684.319664,
-      "modificationDate" : 1554423684.319664,
-      "owner" : "me",
-      "process" : "\/Applications\/Sublime Text.app\/Contents\/MacOS\/plugin_host",
-      "remote-domains" : "packagecontrol.io"
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "packagecontrol.io",
+        "sublimehq.com",
+        "sublimetext.com"
+      ]
     }
   ]
 }
