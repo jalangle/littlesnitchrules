@@ -1,0 +1,14 @@
+{
+  "description": "OBDev related domains",
+  "name": "OBDev",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "obdev.at"
+      ]
+    }
+  ]
+}

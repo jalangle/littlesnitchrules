@@ -1,0 +1,15 @@
+{
+  "description": "WikiMedia related domains",
+  "name": "WikiMedia",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "wikimedia.org",
+        "wikipedia.org"
+      ]
+    }
+  ]
+}

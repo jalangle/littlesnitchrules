@@ -1,0 +1,14 @@
+{
+  "description": "StackOverflow related domains",
+  "name": "StackOverflow",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "stackoverflow.com"
+      ]
+    }
+  ]
+}

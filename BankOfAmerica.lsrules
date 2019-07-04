@@ -1,0 +1,14 @@
+{
+  "description": "Bank of America related domains",
+  "name": "Bank of America",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "bankofamerica.com"
+      ]
+    }
+  ]
+}
