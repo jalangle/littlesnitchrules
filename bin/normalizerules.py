@@ -8,16 +8,14 @@ def is_lsrules_file(path):
 	return os.path.isfile(path) and file_extension == ".lsrules"
 
 def normalize_file(path):
-	filename, file_extension = os.path.splitext(path)
-	if file_extension == ".lsrules":
-		data = json.load(open(path, 'r'))
-		for rule in data["rules"]:
-			if "creationDate" in rule.keys():
-				del rule["creationDate"]
-			if "modificationDate" in rule.keys():
-				del rule["modificationDate"]
+	data = json.load(open(path, 'r'))
+	for rule in data["rules"]:
+		if "creationDate" in rule.keys():
+			del rule["creationDate"]
+		if "modificationDate" in rule.keys():
+			del rule["modificationDate"]
 
-		json.dump(data, open(path, 'w'), indent=2)
+	json.dump(data, open(path, 'w'), indent=2)
 
 def main():
 	script_dir = os.path.dirname(os.path.realpath(__file__))
