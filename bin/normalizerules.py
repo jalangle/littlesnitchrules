@@ -14,7 +14,6 @@ for file in onlyfiles:
 	path = os.path.join(root_dir, file)
 	filename, file_extension = os.path.splitext(path)
 	if file_extension == ".lsrules":
-		print(path)
 		data = json.load(open(path, 'r'))
 		for rule in data["rules"]:
 			if "creationDate" in rule.keys():
