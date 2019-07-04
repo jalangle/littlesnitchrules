@@ -1,11 +1,17 @@
 #!env python3
 
+import argparse
 import json
+
+parser = argparse.ArgumentParser(description='Turn domains from an AdBlock formatted filter list into a littlesnitch lsrules file')
+parser.add_argument('--input', required=True, dest='input_path', action='store', default=None, help='Path to an AdBlock filter formatted file')
+parser.add_argument('--output', dest='output_path', action='store', default=None, help='Path to output file')
+args = parser.parse_args()
 
 # filters explained here:
 # https://adblockplus.org/en/filter-cheatsheet#blocking2
 
-input_file = open("easylist.txt")
+input_file = open(args.input_path, 'r')
 
 output_data = {}
 output_data["description"] = "Blocking domains based on easylist"
@@ -32,4 +38,9 @@ for line in input_file:
 
 input_file.close()
 
-print(json.dumps(output_data, indent=2))
+if(args.output_path == None):
+	print(json.dumps(output_data, indent=2))
+else:
+	output_file = open(args.output_path, 'w')
+	json.dump(output_data, output_file, indent=2)
+	output_file.close()
