@@ -1,12 +1,12 @@
 {
-  "description" : "NewRelic.com related domains",
-  "name" : "NewRelic",
-  "rules" : [
+  "description": "NewRelic.com related domains",
+  "name": "NewRelic",
+  "rules": [
     {
-      "action" : "deny",
-      "owner" : "me",
-      "process" : "any",
-      "remote-domains" : [ 
+      "action": "deny",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
         "newrelic.com",
         "nr-data.net"
       ]

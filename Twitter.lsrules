@@ -1,12 +1,12 @@
 {
-  "description" : "Twitter related domains",
-  "name" : "Twitter",
-  "rules" : [
+  "description": "Twitter related domains",
+  "name": "Twitter",
+  "rules": [
     {
-      "action" : "allow",
-      "owner" : "me",
-      "process" : "any",
-      "remote-domains" : [
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
         "twiimg.com",
         "twitter.com"
       ]

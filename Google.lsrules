@@ -1,22 +1,22 @@
 {
-  "description" : "Google related domains",
-  "name" : "Google",
-  "rules" : [
+  "description": "Google related domains",
+  "name": "Google",
+  "rules": [
     {
-      "action" : "deny",
-      "owner" : "me",
-      "process" : "any",
-      "remote-domains" : [
+      "action": "deny",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
         "google-analytics.com",
         "googletagmanager.com",
         "googletagservices.com"
       ]
     },
     {
-      "action" : "allow",
-      "owner" : "me",
-      "process" : "any",
-      "remote-domains" : [
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
         "ggpht.com",
         "google.com",
         "googleapis.com",

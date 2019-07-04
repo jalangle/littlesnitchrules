@@ -1,12 +1,12 @@
 {
-  "description" : "Github-related domains",
-  "name" : "Github",
-  "rules" : [
+  "description": "Github-related domains",
+  "name": "Github",
+  "rules": [
     {
-      "action" : "allow",
-      "owner" : "me",
-      "process" : "any",
-      "remote-domains" : [
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
         "github.com",
         "githubapp.com",
         "githubassets.com",
