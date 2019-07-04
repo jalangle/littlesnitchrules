@@ -1,0 +1,15 @@
+{
+  "description": "Facebook related domains",
+  "name": "Facebook",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "facebook.com",
+        "instagram.com"
+      ]
+    }
+  ]
+}

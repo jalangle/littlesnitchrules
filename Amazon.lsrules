@@ -1,0 +1,14 @@
+{
+  "description": "Amazon related domains",
+  "name": "Amazon",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "amazon.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "description": "The Guardian related domains",
+  "name": "The Guardian",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "guardianapps.co.uk",
+        "theguardian.com"
+      ]
+    }
+  ]
+}
