@@ -3,15 +3,11 @@
 import json
 import os;
 
-script_dir = os.path.dirname(os.path.realpath(__file__))
+def is_lsrules_file(path):
+	filename, file_extension = os.path.splitext(path)
+	return os.path.isfile(path) and file_extension == ".lsrules"
 
-root_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
-
-
-onlyfiles = [f for f in os.listdir(root_dir) if os.path.isfile(os.path.join(root_dir, f))]
-
-for file in onlyfiles:
-	path = os.path.join(root_dir, file)
+def normalize_file(path):
 	filename, file_extension = os.path.splitext(path)
 	if file_extension == ".lsrules":
 		data = json.load(open(path, 'r'))
@@ -22,3 +18,14 @@ for file in onlyfiles:
 				del rule["modificationDate"]
 
 		json.dump(data, open(path, 'w'), indent=2)
+
+def main():
+	script_dir = os.path.dirname(os.path.realpath(__file__))
+	root_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
+
+	onlyfiles = [f for f in os.listdir(root_dir) if is_lsrules_file(os.path.join(root_dir, f))]
+
+	for file in onlyfiles:
+		normalize_file(os.path.join(root_dir, file))
+
+main()
