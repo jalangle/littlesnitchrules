@@ -1,14 +1,32 @@
 {
-  "description" : "Microsoft-related analytics domains",
-  "name" : "Microsoft Analytics",
+  "description" : "Microsoft-related domains",
+  "name" : "Microsoft",
   "rules" : [
     {
       "action" : "deny",
-      "creationDate" : 1554492730.425422,
-      "modificationDate" : 1554492730.425422,
       "owner" : "me",
       "process" : "any",
       "remote-domains" : "pipe.aria.microsoft.com"
+    },
+    {
+      "action" : "allow",
+      "owner" : "me",
+      "process" : "any",
+      "remote-domains" : [
+        "onedrive.com",
+        "office.com",
+        "microsoft.com",
+        "msedge.net",
+        "windows.com",
+        "hockeyapp.net",
+        "bing.com",
+        "live.com",
+        "oaspapps.com",
+        "skype.com",
+        "live.net",
+        "office.net",
+        "azurewebsites.net"
+      ]
     }
   ]
 }
