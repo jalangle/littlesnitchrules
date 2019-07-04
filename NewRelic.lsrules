@@ -1,0 +1,15 @@
+{
+  "description" : "NewRelic.com related domains",
+  "name" : "NewRelic",
+  "rules" : [
+    {
+      "action" : "deny",
+      "owner" : "me",
+      "process" : "any",
+      "remote-domains" : [ 
+        "newrelic.com",
+        "nr-data.net"
+      ]
+    }
+  ]
+}
