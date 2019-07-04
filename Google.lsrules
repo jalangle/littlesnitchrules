@@ -1,0 +1,28 @@
+{
+  "description" : "Google related domains",
+  "name" : "Google",
+  "rules" : [
+    {
+      "action" : "deny",
+      "owner" : "me",
+      "process" : "any",
+      "remote-domains" : [
+        "google-analytics.com",
+        "googletagmanager.com",
+        "googletagservices.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "owner" : "me",
+      "process" : "any",
+      "remote-domains" : [
+        "google.com",
+        "googleapis.com",
+        "googleusercontent.com",
+        "gstatic.com",
+        "gvt1.com"
+      ]
+    }
+  ]
+}
