@@ -17,11 +17,13 @@
       "owner" : "me",
       "process" : "any",
       "remote-domains" : [
+        "ggpht.com",
         "google.com",
         "googleapis.com",
         "googleusercontent.com",
         "gstatic.com",
-        "gvt1.com"
+        "gvt1.com",
+        "youtube.com"
       ]
     }
   ]
