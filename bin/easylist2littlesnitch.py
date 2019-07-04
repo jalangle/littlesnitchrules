@@ -1,17 +1,26 @@
 #!env python3
 
 import argparse
+import io
 import json
+import requests
+
+def get_easylist_file():
+	url = "https://easylist.to/easylist/easylist.txt"
+	response = requests.get(url)
+	return io.StringIO(response.text)
 
 parser = argparse.ArgumentParser(description='Turn domains from an AdBlock formatted filter list into a littlesnitch lsrules file')
-parser.add_argument('--input', required=True, dest='input_path', action='store', default=None, help='Path to an AdBlock filter formatted file')
+parser.add_argument('--input', dest='input_path', action='store', default=None, help='Path to an AdBlock filter formatted file')
 parser.add_argument('--output', dest='output_path', action='store', default=None, help='Path to output file')
 args = parser.parse_args()
 
 # filters explained here:
 # https://adblockplus.org/en/filter-cheatsheet#blocking2
-
-input_file = open(args.input_path, 'r')
+if args.input_path == None:
+	input_file = get_easylist_file()
+else:
+	input_file = open(args.input_path, 'r')
 
 output_data = {}
 output_data["description"] = "Blocking domains based on easylist"
