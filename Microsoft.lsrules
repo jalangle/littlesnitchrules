@@ -13,19 +13,19 @@
       "owner" : "me",
       "process" : "any",
       "remote-domains" : [
-        "onedrive.com",
-        "office.com",
+        "azurewebsites.net",
+        "bing.com",
+        "hockeyapp.net",
+        "live.com",
+        "live.net",
         "microsoft.com",
         "msedge.net",
-        "windows.com",
-        "hockeyapp.net",
-        "bing.com",
-        "live.com",
         "oaspapps.com",
-        "skype.com",
-        "live.net",
+        "office.com",
         "office.net",
-        "azurewebsites.net"
+        "onedrive.com",
+        "skype.com",
+        "windows.com"
       ]
     }
   ]
