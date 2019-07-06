@@ -121788,12 +121788,6 @@
       "action": "deny",
       "owner": "me",
       "process": "any",
-      "remote-domains": "amazon.com"
-    },
-    {
-      "action": "deny",
-      "owner": "me",
-      "process": "any",
       "remote-domains": "amazonaws.com"
     },
     {
@@ -124939,12 +124933,6 @@
       "owner": "me",
       "process": "any",
       "remote-domains": "mfeed.newzfind.com"
-    },
-    {
-      "action": "deny",
-      "owner": "me",
-      "process": "any",
-      "remote-domains": "microsoft.com"
     },
     {
       "action": "deny",

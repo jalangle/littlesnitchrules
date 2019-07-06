@@ -3,6 +3,8 @@
 import argparse
 import io
 import json
+import logging
+import os
 import requests
 
 def get_easylist_file(input_path):
@@ -21,11 +23,28 @@ def dump_data(output_path, output_data):
 		json.dump(output_data, output_file, indent=2)
 		output_file.close()
 
+def get_allowed_domains():
+	# the allow list sits besides the python script.  Get the script's
+	# path, remove the .py extension and append the replacement extension
+	allow_list_path = os.path.realpath(__file__)[:-3] + ".allow"
+	domains = []
+	try:
+		with open(allow_list_path, 'r') as file:
+			for line in file:
+				domains.append(line.strip())
+	except FileNotFoundError:
+		logging.warning("Allowed domains file not found: " + allow_list_path)
+	return domains
+
 def main():
 	parser = argparse.ArgumentParser(description='Turn domains from an AdBlock formatted filter list into a littlesnitch lsrules file')
 	parser.add_argument('--input', dest='input_path', action='store', default=None, help='Path to an AdBlock filter formatted file')
 	parser.add_argument('--output', dest='output_path', action='store', default=None, help='Path to output file')
 	args = parser.parse_args()
+
+	logging.basicConfig(level=logging.WARNING)
+
+	allowed_domains = get_allowed_domains()
 
 	blocked_domains = {};
 	input_file = get_easylist_file(args.input_path)
@@ -52,12 +71,13 @@ def main():
 	output_data["rules"] = [];
 
 	for domain in blocked_domains.keys():
-		deny_rule = {}
-		deny_rule["action"] = "deny"
-		deny_rule["owner"] = "me"
-		deny_rule["process"] = "any"
-		deny_rule["remote-domains"] = domain
-		output_data["rules"].append(deny_rule)
+		if domain not in allowed_domains:
+			deny_rule = {}
+			deny_rule["action"] = "deny"
+			deny_rule["owner"] = "me"
+			deny_rule["process"] = "any"
+			deny_rule["remote-domains"] = domain
+			output_data["rules"].append(deny_rule)
 
 	dump_data(args.output_path, output_data)
 
