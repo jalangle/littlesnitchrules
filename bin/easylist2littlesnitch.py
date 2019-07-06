@@ -27,12 +27,8 @@ def main():
 	parser.add_argument('--output', dest='output_path', action='store', default=None, help='Path to output file')
 	args = parser.parse_args()
 
+	blocked_domains = {};
 	input_file = get_easylist_file(args.input_path)
-
-	output_data = {}
-	output_data["description"] = "Blocking domains based on easylist"
-	output_data["name"] = "EasyList"
-	output_data["rules"] = [];
 
 	# filters explained here:
 	# https://adblockplus.org/en/filter-cheatsheet#blocking2
@@ -48,12 +44,20 @@ def main():
 				# if we find a separator, then this is a rule where
 				# we block if the domain contains this.  i.e  example.com blocks this.example.com
 				if separator != -1:
-					deny_rule = {}
-					deny_rule["action"] = "deny"
-					deny_rule["owner"] = "me"
-					deny_rule["process"] = "any"
-					deny_rule["remote-domains"] = line[:separator]
-					output_data["rules"].append(deny_rule)
+					blocked_domains[line[:separator]] = 1
+
+	output_data = {}
+	output_data["description"] = "Blocking domains based on easylist"
+	output_data["name"] = "EasyList"
+	output_data["rules"] = [];
+
+	for domain in blocked_domains.keys():
+		deny_rule = {}
+		deny_rule["action"] = "deny"
+		deny_rule["owner"] = "me"
+		deny_rule["process"] = "any"
+		deny_rule["remote-domains"] = domain
+		output_data["rules"].append(deny_rule)
 
 	dump_data(args.output_path, output_data)
 
