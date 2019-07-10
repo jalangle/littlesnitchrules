@@ -7,7 +7,8 @@
       "owner": "me",
       "process": "any",
       "remote-domains": [
-        "signal.org"
+        "signal.org",
+        "whispersystems.org"
       ]
     }
   ]
