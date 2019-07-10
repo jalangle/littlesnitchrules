@@ -1,0 +1,16 @@
+{
+  "description": "Atlassian related domains",
+  "name": "Atlassian",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "atlassian.com",
+        "atl-paas.net",
+        "bitbucket.org"
+      ]
+    }
+  ]
+}
