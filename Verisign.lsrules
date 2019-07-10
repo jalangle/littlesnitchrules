@@ -1,0 +1,16 @@
+{
+  "description": "Verisign related domains",
+  "name": "Verisign",
+  "rules": [
+    {
+      "action": "allow",
+      "owner": "me",
+      "process": "any",
+      "remote-domains": [
+        "verisign.com",
+        "verisigninc.com",
+        "verisign-grs.com"
+      ]
+    }
+  ]
+}

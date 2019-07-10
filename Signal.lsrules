@@ -1,15 +1,13 @@
 {
-  "description": "Twitter related domains",
-  "name": "Twitter",
+  "description": "Signal related domains",
+  "name": "Signal",
   "rules": [
     {
       "action": "allow",
       "owner": "me",
       "process": "any",
       "remote-domains": [
-        "t.co",
-        "twimg.com",
-        "twitter.com"
+        "signal.org"
       ]
     }
   ]
