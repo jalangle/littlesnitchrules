@@ -8,8 +8,11 @@
       "process": "any",
       "remote-domains": [
         "atlassian.com",
+        "atlassian.net",
         "atl-paas.net",
-        "bitbucket.org"
+        "bitbucket.com",
+        "bitbucket.org",
+        "bytebucket.org"
       ]
     }
   ]
